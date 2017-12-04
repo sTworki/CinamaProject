@@ -3,6 +3,5 @@ from django.db import models
 
 # Create your models here.
 
-class Cinema:
-    def __init__(self):
-        self.name = name
+class Cinema(models.Model):
+    name = models.CharField(max_length=50)
